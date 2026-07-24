@@ -1,0 +1,39 @@
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment/secrets
+.env
+.env.*
+!.env.example
+
+# Test/coverage artifacts
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Build/package artifacts
+build/
+dist/
+*.egg-info/
+
+# Runtime/generated app data
+logs/
+uploads/
+processed/
+chunks/
+vector_store/
+
+# Editor/OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
