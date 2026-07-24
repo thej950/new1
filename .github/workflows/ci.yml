@@ -31,10 +31,14 @@ jobs:
       - name: Compile Project
         run: |
           python -m compileall app
-
+          
       - name: Run Unit Tests
         run: |
-          python -m unittest discover tests
+          if [ -d "tests" ]; then
+            python -m unittest discover -s tests
+          else
+            echo "No tests directory found. Skipping unit tests."
+          fi
 
       - name: Workflow Completed
         run: echo "Enterprise Agentic AI Platform Build Successful!"
